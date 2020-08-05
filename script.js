@@ -5,8 +5,6 @@ let expenseContainer = document.querySelector(".expense-container");
 let expenses = document.querySelector(".expenses");
 let remainingParagraph = document.querySelector(".remaining");
 
-let main = document.querySelector(".main");
-
 weekly.addEventListener("submit", (e) => {
   e.preventDefault();
   expenseContainer.innerHTML = "";
@@ -44,5 +42,3 @@ weekly.addEventListener("submit", (e) => {
   });
   weekly.reset();
 });
-
-main.reset();
