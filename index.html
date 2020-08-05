@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Budget Buster</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<header>
-			<h1>Bustin' Budgets</h1>
-		</header>
-		<main class="main">
-			<form class="form weekly">
-				<label for="amount">Enter Budget</label>
-				<input type="number" id="amount" name="amount" />
-				<button class="budget-btn">Update Budget</button>
-			</form>
-			<form class="form expenses">
-				<label for="category">Choose category</label>
-				<select name="category" id="category">
-					<option value="entertainment">Entertainment</option>
-					<option value="food">Food</option>
-					<option value="clothing">Clothing</option>
-					<option value="bills">Bills</option>
-				</select>
-				<label for="amount">Enter Amount</label>
-				<input type="number" id="amount" name="amount" />
-				<button class="add-btn">Add Expense</button>
-			</form>
-			<section>
-				<p class="remaining">Remaining Budget</p>
-			</section>
-			<section class="expense-container"></section>
-		</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Buster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bustin' Budgets</h1>
+    </header>
+    <main class="main">
+      <form class="form weekly">
+        <label for="amount">Enter Budget</label>
+        <input type="number" id="amount" name="amount" />
+        <button class="budget-btn">Update Budget</button>
+      </form>
+      <form class="form expenses">
+        <label for="category">Choose category</label>
+        <select name="category" id="category">
+          <option value="entertainment">Entertainment</option>
+          <option value="food">Food</option>
+          <option value="clothing">Clothing</option>
+          <option value="bills">Bills</option>
+        </select>
+        <label for="amount">Enter Amount</label>
+        <input type="number" id="amount" name="amount" />
+        <button class="add-btn">Add Expense</button>
+      </form>
 
-		<script src="script.js"></script>
-	</body>
+      <section class="expense-container"></section>
+      <section>
+        <p class="remaining">Remaining Budget</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
