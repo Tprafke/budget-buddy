@@ -27,20 +27,25 @@ expenses.addEventListener("submit", (e) => {
 	let data2 = new FormData(expenses);
 	let expense = data2.get("category");
 	let number = data2.get("amount");
-	remaining = remaining - number;
+	let expenseType = data2.get("expense-type");
+	remaining = remaining - number; 
 	let someVariable = document.createElement("p");
-	remainingParagraph.innerText = `Remaining: ${remaining}`;
+	remainingParagraph.innerText = `Remaining: $${remaining}`;
 	if (expense === "entertainment") {
-		someVariable.innerText = ` Entertainment -$${number}`;
+		//  entertainmentContainer.innerText = "Entertainment";
+		someVariable.innerText = ` ${expenseType} -$${number}`;
 		entertainmentContainer.append(someVariable);
 	} else if (expense === "food") {
-		someVariable.innerText = ` Grub -$${number}`;
+		// foodContainer.innerText = `Food`;
+		someVariable.innerText = ` ${expenseType} -$${number}`;
 		foodContainer.append(someVariable);
 	} else if (expense === "clothing") {
-		someVariable.innerText = ` Drip -$${number}`;
-		billsContainer.append(someVariable);
-	} else {
-		someVariable.innerText = `Bills -$${number}`;
+		// clothingContainer.innerText = `Clothing`;
+		someVariable.innerText = ` ${expenseType} -$${number}`;
 		clothingContainer.append(someVariable);
+	} else {
+		// billsContainer.innerText = `Bills`;
+		someVariable.innerText = `${expenseType} -$${number}`;
+		billsContainer.append(someVariable);
 	}
 });
