@@ -4,17 +4,21 @@ let weekly = document.querySelector(".weekly");
 let expenseContainer = document.querySelector(".expense-container");
 let expenses = document.querySelector(".expenses");
 let remainingParagraph = document.querySelector(".remaining");
-
+let entertainmentContainer = document.querySelector(".entertainment-container");
+let foodContainer = document.querySelector(".food-container");
+let billsContainer = document.querySelector(".bills-container");
+let clothingContainer = document.querySelector(".clothing-container");
 let remaining = 0;
 
 weekly.addEventListener("submit", (e) => {
 	e.preventDefault();
-	expenseContainer.innerHTML = "";
 	let data = new FormData(weekly);
 	let income = data.get("amount");
 	remaining = income;
-	console.log(remaining);
-
+	entertainmentContainer.innerHTML = "";
+	foodContainer.innerHTML = "";
+	billsContainer.innerHTML = "";
+	clothingContainer.innerHTML = "";
 	remainingParagraph.innerText = `Remaining: ${remaining}`;
 });
 
@@ -24,23 +28,19 @@ expenses.addEventListener("submit", (e) => {
 	let expense = data2.get("category");
 	let number = data2.get("amount");
 	remaining = remaining - number;
-	console.log(remaining);
+	let someVariable = document.createElement("p");
 	remainingParagraph.innerText = `Remaining: ${remaining}`;
 	if (expense === "entertainment") {
-		let print = document.createElement("div");
-		print.innerText = ` Entertainment -$${number}`;
-		expenseContainer.append(print);
+		someVariable.innerText = ` Entertainment -$${number}`;
+		entertainmentContainer.append(someVariable);
 	} else if (expense === "food") {
-		let print = document.createElement("div");
-		print.innerText = ` Grub -$${number}`;
-		expenseContainer.append(print);
+		someVariable.innerText = ` Grub -$${number}`;
+		foodContainer.append(someVariable);
 	} else if (expense === "clothing") {
-		let print = document.createElement("div");
-		print.innerText = ` Drip -$${number}`;
-		expenseContainer.append(print);
+		someVariable.innerText = ` Drip -$${number}`;
+		billsContainer.append(someVariable);
 	} else {
-		let print = document.createElement("div");
-		print.innerText = `Bills -$${number}`;
-		expenseContainer.append(print);
+		someVariable.innerText = `Bills -$${number}`;
+		clothingContainer.append(someVariable);
 	}
 });
