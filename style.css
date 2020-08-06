@@ -72,6 +72,33 @@ h1 {
   padding: 2px;
 }
 
-.entertainment-container {
+.expense-container {
+  min-height: 170px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.list {
+  color: darkgray;
+  font-family: "cabin", serif;
+}
+
+.red {
+  color: #662e99;
+}
+
+.remaining {
+  background-color: white;
+  border-radius: 5px;
+  font-family: "cabin", serif;
+  padding: 5px;
+}
+.maroon {
   color: red;
 }
