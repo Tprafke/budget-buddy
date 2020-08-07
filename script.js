@@ -32,7 +32,7 @@ weekly.addEventListener("submit", (e) => {
 	billsContainer.innerHTML = "";
 	clothingContainer.innerHTML = "";
 	remainingParagraph.innerText = `Remaining: $${remaining}`;
-	remainingParagraph.classList.remove("maroon");
+	remainingParagraph.classList.remove("red");
 	initialBudget = remaining;
 	let totalSpent = 0;
 	eTotal = 0;
@@ -77,9 +77,9 @@ expenses.addEventListener("submit", (e) => {
 		billsParagraph.innerText = `Bills Total: $${billsTotal}`;
 	}
 	if (remaining < 0) {
-		remainingParagraph.classList.add("maroon");
+		remainingParagraph.classList.add("red");
 	} else {
-		remainingParagraph.classList.remove("maroon");
+		remainingParagraph.classList.remove("red");
 	}
 	totalSpent = initialBudget - remaining;
 	spentParagraph.innerText = `Total Spent: $${totalSpent}`;
