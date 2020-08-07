@@ -24,6 +24,19 @@ h1 {
 	flex-direction: column;
 }
 
+.img{
+	height: 260px;
+}
+
+.drop-down:hover,
+.btn:hover,
+.category:hover{
+  background-color:#22e996;
+  background-color: #22e996;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
 .form-container {
 	margin: 10px;
 	padding: 10px;
@@ -34,13 +47,14 @@ h1 {
 	width: 250px;
 	border-radius: 10px;
 	align-items: center;
-	/* justify-content: space-between; */
+	justify-content: space-between; 
 }
 
 .form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width:100%;
 	justify-content: space-evenly;
 	font-family: "cabin", serif;
 }
@@ -89,7 +103,7 @@ h1 {
 	font-family: "cabin", serif;
 }
 
-.red {
+.purple {
 	color: #662e99;
 }
 
@@ -105,6 +119,26 @@ h1 {
 	padding: 5px;
 	margin: 5px;
 }
-.maroon {
+.red {
 	color: red;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+  font-family: 'Advent Pro', sans-serif;
+  width: 95%;
+}
+
+  label {
+    font-weight: 900;
+    color:  #138656; 
+  }
