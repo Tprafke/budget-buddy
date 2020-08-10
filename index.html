@@ -9,10 +9,7 @@
 			href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cabin&display=swap"
-			rel="stylesheet"
-		/>
+
 	</head>
 	<body>
 		<header class="header">
@@ -27,13 +24,14 @@
 						type="number"
 						id="amount"
 						name="amount"
-						placeholder="Enter Weekly Income"
+						placeholder="Enter Weekly Income" required
 					/>
 					<button class="btn update-button">Update Budget</button>
 				</form>
 				<form class="form expenses">
 					<label for="category" class="item">CHOOSE CATEGORY</label>
 					<select name="category" id="category" class="drop-down">
+						
 						<option value="entertainment">Entertainment</option>
 						<option value="food">Food</option>
 						<option value="bills">Bills</option>
@@ -53,7 +51,7 @@
 						type="number"
 						id="amount"
 						name="amount"
-						placeholder="$0"
+						placeholder="$0" required
 					/>
 					<button class="btn">Add Expense</button>
 				</form>
