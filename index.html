@@ -9,7 +9,6 @@
 			href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap"
 			rel="stylesheet"
 		/>
-
 	</head>
 	<body>
 		<header class="header">
@@ -24,14 +23,14 @@
 						type="number"
 						id="amount"
 						name="amount"
-						placeholder="Enter Weekly Income" required
+						placeholder="Enter Weekly Income"
+						required
 					/>
 					<button class="btn update-button">Update Budget</button>
 				</form>
 				<form class="form expenses">
 					<label for="category" class="item">CHOOSE CATEGORY</label>
 					<select name="category" id="category" class="drop-down">
-						
 						<option value="entertainment">Entertainment</option>
 						<option value="food">Food</option>
 						<option value="bills">Bills</option>
@@ -51,7 +50,8 @@
 						type="number"
 						id="amount"
 						name="amount"
-						placeholder="$0" required
+						placeholder="$0"
+						required
 					/>
 					<button class="btn">Add Expense</button>
 				</form>
@@ -64,21 +64,23 @@
 
 			<section class="expense-container">
 				<p class="item">EXPENSES</p>
-				<div class="list">
-					<p class="ent-total underline">Entertainment Total: $0</p>
-					<div class="entertainment-container red"></div>
-				</div>
-				<div class="list">
-					<p class="food-total underline">Food Total: $0</p>
-					<div class="food-container red"></div>
-				</div>
-				<div class="list">
-					<p class="bills-total underline">Bills Total: $0</p>
-					<div class="bills-container red"></div>
-				</div>
-				<div class="list">
-					<p class="clothing-total underline">Clothing Total: $0</p>
-					<div class="clothing-container red"></div>
+				<div class="container-2">
+					<div class="list">
+						<p class="ent-total underline">Entertainment Total: $0</p>
+						<div class="entertainment-container red"></div>
+					</div>
+					<div class="list">
+						<p class="food-total underline">Food Total: $0</p>
+						<div class="food-container red"></div>
+					</div>
+					<div class="list">
+						<p class="bills-total underline">Bills Total: $0</p>
+						<div class="bills-container red"></div>
+					</div>
+					<div class="list">
+						<p class="clothing-total underline">Clothing Total: $0</p>
+						<div class="clothing-container red"></div>
+					</div>
 				</div>
 			</section>
 		</main>

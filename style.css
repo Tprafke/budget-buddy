@@ -100,7 +100,7 @@ body {
 	margin: 10px;
 	padding: 1px;
 	border: 1px solid rgb(5, 52, 14);
-	overflow-y: scroll; 
+	overflow-y: scroll;
 }
 
 .expense-container::-webkit-scrollbar-thumb {
@@ -112,11 +112,17 @@ body {
 
 .expense-container::-webkit-scrollbar {
 	width: 16px;
-} 
+}
+.container-2 {
+	display: flex;
+	align-items: left;
+	flex-direction: column;
+}
 
 .list {
 	color: darkgray;
 	font-family: "Advent Pro", sans-serif;
+	padding-left: 10px;
 }
 
 .totals {
