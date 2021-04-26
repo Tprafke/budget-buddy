@@ -1,7 +1,6 @@
 # Budget Buddy
 
-View Budget Buddy here:
-https://tprafkebudgetbuddy.surge.sh/
+### [Live Site](https://tprafkebudgetbuddy.surge.sh/)
 
 ## Description
 
