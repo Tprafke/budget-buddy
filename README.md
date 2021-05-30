@@ -4,7 +4,7 @@
 
 ## Description
 
-A simple budgeting app built using JavaScript, HTML, and CSS. Allows users to enter their weekly budget and add expenses within several different categories. Notifies users of their remaining budget and whether they have exceeded the budget.
+A simple budgeting website built using JavaScript, HTML, and CSS. Allows users to enter their weekly budget and add expenses within several different categories. Notifies users of their remaining budget and whether they have exceeded the budget.
 
 ## Languages & Technologies
 
